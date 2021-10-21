@@ -26,8 +26,8 @@
 * MAP: controls food generation and direct
 * snake, also detect if its dead.
 * =========================================
-* GAME: Launch game and vise versa. Counts
-* the food eaten. And the features with game.
+* GAME: Launch game and vise versa, another
+* features with game.
 */
 
 class Chunk
@@ -613,7 +613,7 @@ public:
 
     void clear_console()
     {
-        // Flickering appears even if we use illconsoleoutputcharacter(...)
+        // Flickering appears even if we use fillconsoleoutputcharacter(...)
         // implemeting double buffer teqniuque is quite long for me 
         // so just move cursor and draw the frame above the last one.
         static const HANDLE output_window = GetStdHandle(STD_OUTPUT_HANDLE);
